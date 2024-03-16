@@ -10,7 +10,7 @@ const PopularMovies = () => {
     const fetchMovies = async () => {
       try {
         const response = await fetch(
-          'http://www.omdbapi.com/?s=movie&type=movie&apikey=3fb7fe20'
+          'https://www.omdbapi.com/?s=movie&type=movie&apikey=3fb7fe20'
         );
         const data = await response.json();
         if (data && data.Search) {
